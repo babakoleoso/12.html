@@ -1,13 +1,12 @@
 <!-- =========================================================
- SGI — Comparative Belief Systems (Single-File Lesson w/ Images)
- Topic: Ifá • Ayurveda • I Ching • Nation of Islam (Point #12)
- File: sgi-parallels-ifa-ayurveda-iching-noi-point12-images.html
+ SGI — Public Teaching Page (Single File)
+ Title: SGI — Universal Law Parallels (Ifá • Ayurveda • Metu Neter • NOI Point #12)
+ File: sgi-universal-law-parallels-point12.html
 
  Notes:
   - Static HTML. Works on GitHub Pages / Cloudflare Pages.
-  - Optional local logo: put SwamiG.gif in same folder (top-left).
-  - Images are embedded via Wikimedia (hotlinks). You can swap to local files later.
-  - Checklist + notes save locally via localStorage.
+  - Put this file in SAME folder as: SwamiG.gif  (SGI logo)
+  - Images used are hotlinked from reputable public sources (NOI.org + Wikimedia Commons).
 ========================================================= -->
 <!DOCTYPE html>
 <html lang="en">
@@ -16,8 +15,8 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="color-scheme" content="dark light" />
   <meta name="theme-color" content="#0b0b0f" />
-  <title>SwamiG Institute — Parallels: Ifá • Ayurveda • I Ching • NOI (Point #12)</title>
-  <meta name="description" content="SGI lesson page comparing core belief-system parallels: Ifá, Ayurveda, I Ching, and Nation of Islam Point #12—alignment, corrective wisdom, embodied guidance." />
+  <title>SwamiG Institute — Ifá • Ayurveda • Metu Neter • NOI Point #12 Parallels</title>
+  <meta name="description" content="SwamiG Institute (SGI) teaching page: parallels between Ifá, Ayurveda, Ausar–Auset (Metu Neter Vol. 1), and Point #12 of What The Muslims Believe (Nation of Islam) — one universal law expressed in four languages." />
 
   <style>
     :root{
@@ -25,598 +24,593 @@
       --card:rgba(20,20,28,.92); --soft:rgba(255,255,255,.06);
       --border:rgba(255,255,255,.12);
       --accent:#bb66ff; --accent2:#ffd166;
-      --ok:#4ade80; --warn:#fbbf24; --bad:#fb7185;
       --ring:rgba(187,102,255,.35);
-      --shadow: 0 12px 40px rgba(0,0,0,.45);
-      --radius: 22px;
-      --radius2: 16px;
-      --max: 1120px;
+      --ok:#4ade80; --warn:#fbbf24; --bad:#fb7185;
+      --shadow: 0 18px 50px rgba(0,0,0,.40);
+      --radius:18px;
     }
     *{box-sizing:border-box}
     body{
-      margin:0; color:var(--ink);
-      font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial, sans-serif;
-      background:
-        radial-gradient(900px 600px at 12% -10%, rgba(187,102,255,.22), transparent 60%),
-        radial-gradient(900px 700px at 92% 10%, rgba(255,209,102,.12), transparent 55%),
-        radial-gradient(900px 700px at 50% 110%, rgba(74,222,128,.09), transparent 60%),
+      margin:0; background:
+        radial-gradient(900px 520px at 20% -10%, rgba(187,102,255,.20), transparent 60%),
+        radial-gradient(900px 520px at 90% 10%, rgba(255,209,102,.16), transparent 60%),
         var(--bg);
+      color:var(--ink);
+      font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial, sans-serif;
     }
-    a{color:inherit; text-decoration:none}
-    a:hover{text-decoration:underline}
-    .wrap{max-width:var(--max); margin:0 auto; padding:26px 18px 64px}
+    a{color:inherit}
+    .wrap{max-width:1180px;margin:0 auto;padding:26px 18px 80px}
+    header{
+      position:sticky; top:0; z-index:30;
+      backdrop-filter: blur(12px);
+      background: linear-gradient(to bottom, rgba(11,11,15,.90), rgba(11,11,15,.55));
+      border-bottom:1px solid var(--border);
+    }
     .topbar{
-      display:flex; align-items:center; justify-content:space-between;
-      gap:14px; margin-bottom:14px;
+      max-width:1180px;margin:0 auto;padding:12px 18px;
+      display:flex; align-items:center; gap:14px; justify-content:space-between;
     }
-    .brand{
-      display:flex; align-items:center; gap:12px;
-    }
+    .brand{display:flex; align-items:center; gap:12px; min-width:240px}
     .logo{
-      width:46px; height:46px; border-radius:14px;
-      background: linear-gradient(135deg, rgba(187,102,255,.35), rgba(255,209,102,.15));
+      width:42px;height:42px;border-radius:12px;
       border:1px solid var(--border);
-      box-shadow: 0 10px 26px rgba(0,0,0,.35);
-      overflow:hidden;
+      background: radial-gradient(circle at 30% 30%, rgba(255,255,255,.12), rgba(255,255,255,.03));
+      overflow:hidden; box-shadow: 0 10px 26px rgba(0,0,0,.30);
       display:grid; place-items:center;
-      position:relative;
     }
-    .logo img{width:100%; height:100%; object-fit:cover; display:block}
-    .logo .fallback{
-      font-weight:900; letter-spacing:.5px; color:rgba(255,255,255,.92);
-      text-shadow: 0 6px 18px rgba(0,0,0,.55);
-      font-size:13px;
-    }
-    .tagline{
-      display:flex; flex-direction:column; gap:2px;
-    }
-    .tagline .t1{font-weight:900; letter-spacing:.2px}
-    .tagline .t2{color:var(--muted); font-size:13px}
-    .pillrow{display:flex; gap:10px; flex-wrap:wrap; justify-content:flex-end}
+    .logo img{width:100%;height:100%;object-fit:cover;display:block}
+    .brand h1{margin:0;font-size:14px;line-height:1.25}
+    .brand .sub{color:var(--muted);font-size:12px}
+    .actions{display:flex; gap:10px; flex-wrap:wrap; justify-content:flex-end}
     .pill{
       display:inline-flex; align-items:center; gap:8px;
-      padding:10px 12px;
-      border-radius:999px;
+      padding:8px 12px; border-radius:999px;
       border:1px solid var(--border);
-      background: rgba(255,255,255,.06);
-      box-shadow: 0 10px 26px rgba(0,0,0,.25);
+      background: rgba(255,255,255,.04);
+      text-decoration:none;
+      transition: transform .12s ease, background .12s ease, border-color .12s ease;
+      user-select:none;
       font-size:13px;
+    }
+    .pill:hover{transform: translateY(-1px); background: rgba(255,255,255,.07); border-color: rgba(255,255,255,.20)}
+    .pill strong{font-weight:800}
+    .pill .dot{width:8px;height:8px;border-radius:999px;background:var(--accent)}
+    .pill.secondary .dot{background:var(--accent2)}
+    .pill.ok .dot{background:var(--ok)}
+    .card{
+      background: var(--card);
+      border:1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+    .hero{
+      margin-top:22px;
+      display:grid; grid-template-columns: 1.2fr .8fr; gap:16px;
+      align-items:stretch;
+    }
+    @media (max-width:920px){.hero{grid-template-columns:1fr}}
+    .hero .left{padding:22px}
+    .hero .right{padding:18px}
+    .kicker{
+      display:inline-flex; gap:10px; align-items:center;
+      padding:7px 10px; border-radius:999px;
+      border:1px solid var(--border);
+      background: rgba(255,255,255,.04);
+      color: var(--muted);
+      font-size:12px;
+      letter-spacing:.2px;
+    }
+    .kicker .ring{
+      width:10px;height:10px;border-radius:999px;
+      background: radial-gradient(circle at 30% 30%, var(--accent), rgba(187,102,255,.10));
+      box-shadow: 0 0 0 4px rgba(187,102,255,.10);
+    }
+    h2{margin:12px 0 8px;font-size:30px;line-height:1.15}
+    .lead{color:var(--muted);margin:0 0 14px}
+    .meta{display:flex; flex-wrap:wrap; gap:10px; margin-top:14px}
+    .chip{
+      padding:8px 10px;border-radius:12px;
+      border:1px solid var(--border);
+      background: rgba(255,255,255,.03);
+      font-size:12px;color: var(--muted);
+    }
+    .note{
+      padding:12px 12px;border-radius:14px;
+      border:1px solid var(--border);
+      background: rgba(255,255,255,.03);
+      color: var(--muted);
+      font-size:13px;
+    }
+    .grid{
+      margin-top:16px;
+      display:grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap:14px;
+    }
+    .col-12{grid-column: 1 / -1;}
+    .col-8{grid-column: span 8;}
+    .col-6{grid-column: span 6;}
+    .col-4{grid-column: span 4;}
+    @media (max-width:920px){.col-8,.col-6,.col-4{grid-column:1 / -1}}
+    .section{padding:18px}
+    .section h3{margin:0 0 8px;font-size:18px}
+    .section p{margin:0 0 10px;color:var(--muted)}
+    .figure{
+      overflow:hidden;
+      border-radius:16px;
+      border:1px solid var(--border);
+      background: rgba(255,255,255,.02);
+    }
+    .figure img{
+      width:100%;
+      height:260px;
+      object-fit:cover;
+      display:block;
+      background: rgba(255,255,255,.02);
+    }
+    .figcap{
+      padding:10px 12px;
+      color:var(--muted);
+      font-size:12px;
+      border-top:1px solid var(--border);
+    }
+    .twoPics{
+      display:grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap:12px;
+    }
+    @media (max-width:620px){.twoPics{grid-template-columns:1fr}}
+    .table{
+      width:100%;
+      border-collapse:separate;
+      border-spacing:0;
+      overflow:hidden;
+      border-radius:16px;
+      border:1px solid var(--border);
+      background: rgba(255,255,255,.02);
+    }
+    .table th, .table td{
+      padding:12px 12px;
+      border-bottom:1px solid var(--border);
+      vertical-align:top;
+      font-size:13px;
+    }
+    .table th{
+      text-align:left;
+      color:var(--ink);
+      background: rgba(255,255,255,.03);
+      font-weight:900;
+    }
+    .table td{color:var(--muted)}
+    .table tr:last-child td{border-bottom:none}
+    .hl{
+      color:var(--ink);
+      font-weight:850;
+    }
+    .miniTag{
+      display:inline-flex;align-items:center;gap:8px;
+      padding:6px 10px;border-radius:999px;
+      border:1px solid var(--border);
+      background: rgba(255,255,255,.03);
+      color:var(--muted);
+      font-size:12px;
+      margin-top:8px;
+    }
+    .miniTag i{width:9px;height:9px;border-radius:999px;background:var(--accent2);display:inline-block}
+    details{border-radius:16px;border:1px solid var(--border);background:rgba(255,255,255,.02);overflow:hidden}
+    summary{
+      cursor:pointer; list-style:none;
+      padding:12px 14px;
+      display:flex; align-items:center; justify-content:space-between; gap:10px;
       user-select:none;
     }
-    .dot{width:8px; height:8px; border-radius:50%;}
-    .dot.p{background:var(--accent)}
-    .dot.g{background:var(--ok)}
-    .dot.y{background:var(--accent2)}
-    .hero{
-      margin-top:14px;
-      border:1px solid var(--border);
-      background: linear-gradient(180deg, rgba(255,255,255,.07), rgba(255,255,255,.03));
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-      padding: 22px 18px;
-      position:relative;
-      overflow:hidden;
-    }
-    .hero:before{
-      content:"";
-      position:absolute; inset:-2px;
-      background:
-        radial-gradient(420px 220px at 18% 10%, rgba(187,102,255,.22), transparent 70%),
-        radial-gradient(460px 260px at 90% 20%, rgba(255,209,102,.12), transparent 70%);
-      pointer-events:none;
-      filter: blur(0px);
-    }
-    .hero > *{position:relative}
-    h1{margin:0 0 6px; font-size:26px; line-height:1.15}
-    .sub{color:var(--muted); margin:0 0 14px}
-    .keyline{
-      border-left: 4px solid rgba(187,102,255,.65);
-      padding:12px 12px;
-      background: rgba(0,0,0,.18);
-      border-radius: 14px;
-      margin: 14px 0 0;
-    }
-    .keyline strong{color:#fff}
-    .grid{
-      display:grid; gap:14px;
-      grid-template-columns: repeat(12, 1fr);
-      margin-top:16px;
-    }
-    .card{
-      grid-column: span 12;
-      border:1px solid var(--border);
-      background: var(--card);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-      overflow:hidden;
-    }
-    @media (min-width: 920px){
-      .card.half{grid-column: span 6;}
-      .card.third{grid-column: span 4;}
-    }
-    .cardhead{
-      display:flex; align-items:flex-start; justify-content:space-between; gap:10px;
-      padding:16px 16px 10px;
-    }
-    .kicker{
-      display:inline-flex; align-items:center; gap:8px;
-      color:var(--muted);
-      font-size:12px; letter-spacing:.25px; text-transform:uppercase;
-    }
-    .kbadge{
-      width:10px; height:10px; border-radius:3px; background: rgba(187,102,255,.75);
-      box-shadow: 0 0 0 4px rgba(187,102,255,.15);
-    }
-    .title{
-      margin:6px 0 0;
-      font-size:18px; line-height:1.2; font-weight:900;
-    }
-    .meta{
-      margin:0; color:var(--muted); font-size:13px;
-    }
-    .cardbody{padding:0 16px 16px}
-    .imgwrap{
-      margin: 12px 0 14px;
-      border-radius: var(--radius2);
-      overflow:hidden;
-      border:1px solid rgba(255,255,255,.10);
-      background: rgba(255,255,255,.04);
-    }
-    .imgwrap img{
-      width:100%; height:260px; object-fit:cover; display:block;
-      filter: contrast(1.02);
-    }
-    .caption{
-      padding:10px 12px;
-      color:var(--muted);
-      font-size:12px;
-      background: rgba(0,0,0,.22);
-      border-top:1px solid rgba(255,255,255,.08);
-    }
-    ul{margin:10px 0 0 18px; padding:0}
-    li{margin:6px 0}
-    .callout{
-      margin-top:12px;
-      border:1px solid rgba(255,209,102,.25);
-      background: rgba(255,209,102,.08);
-      border-radius: 16px;
-      padding: 12px 12px;
-    }
-    .callout strong{color:#fff}
-    .tablewrap{
-      overflow:auto;
-      border-radius: var(--radius);
-      border:1px solid var(--border);
-      background: rgba(0,0,0,.18);
-    }
-    table{
-      width:100%;
-      border-collapse:collapse;
-      min-width: 860px;
-      font-size:14px;
-    }
-    th, td{
-      padding:12px 12px;
-      border-bottom:1px solid rgba(255,255,255,.08);
-      vertical-align:top;
-    }
-    th{
-      text-align:left;
-      font-size:12px;
-      letter-spacing:.25px;
-      text-transform:uppercase;
-      color:var(--muted);
-      background: rgba(255,255,255,.04);
-      position:sticky; top:0;
-    }
-    .ok{color:var(--ok); font-weight:800}
-    .maybe{color:var(--warn); font-weight:800}
-    .no{color:var(--bad); font-weight:800}
-    .tools{
-      display:flex; flex-wrap:wrap; gap:10px; margin-top:12px;
-    }
-    button{
-      appearance:none; border:1px solid var(--border);
-      background: rgba(255,255,255,.06);
-      color:var(--ink);
-      padding:10px 12px;
-      border-radius: 14px;
-      cursor:pointer;
-      font-weight:700;
-      box-shadow: 0 10px 26px rgba(0,0,0,.22);
-    }
-    button:hover{background: rgba(255,255,255,.09)}
-    .checklist{
-      display:grid; gap:10px; margin-top:10px;
-    }
-    .chk{
-      display:flex; gap:10px; align-items:flex-start;
-      padding:12px 12px;
-      border-radius: 16px;
-      border:1px solid rgba(255,255,255,.10);
-      background: rgba(255,255,255,.04);
-    }
-    .chk input{transform: translateY(3px); width:18px; height:18px}
-    .notes{
-      width:100%;
-      min-height:120px;
-      border-radius: 16px;
-      border:1px solid rgba(255,255,255,.12);
-      background: rgba(0,0,0,.22);
-      color:var(--ink);
-      padding:12px 12px;
-      outline:none;
-      resize:vertical;
-    }
-    footer{
+    summary::-webkit-details-marker{display:none}
+    .caret{color:var(--muted);font-size:12px}
+    .panel{padding:0 14px 14px}
+    ul{margin:8px 0 0 18px;color:var(--muted)}
+    .footer{
       margin-top:18px;
-      color: rgba(191,195,209,.80);
-      font-size:12px;
-      text-align:center;
-    }
-    .tiny{
-      opacity:.75;
-      display:inline-block;
-      padding:6px 10px;
-      border-radius:999px;
-      border:1px solid rgba(255,255,255,.10);
+      padding:14px 16px;
+      border-radius: var(--radius);
+      border:1px solid var(--border);
       background: rgba(255,255,255,.03);
+      color: var(--muted);
+      font-size:12px;
+      display:flex; justify-content:space-between; gap:10px; flex-wrap:wrap;
     }
-    @media print{
-      body{background:#fff; color:#111}
-      .hero,.card,.tablewrap{box-shadow:none}
-      .pillrow,.tools{display:none !important}
-      .imgwrap img{height:220px}
-      .card{break-inside:avoid}
-      a{text-decoration:none}
+    .small{font-size:12px}
+    .svgWrap{
+      border:1px solid var(--border);
+      background: rgba(255,255,255,.02);
+      border-radius:16px;
+      padding:12px;
+      overflow:hidden;
+    }
+    .btnRow{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
+    button{
+      border:1px solid var(--border);
+      background: rgba(255,255,255,.04);
+      color: var(--ink);
+      padding:10px 12px;
+      border-radius:14px;
+      cursor:pointer;
+      transition: transform .12s ease, background .12s ease, border-color .12s ease;
+      font-weight:800;
+    }
+    button:hover{transform: translateY(-1px); background: rgba(255,255,255,.07); border-color: rgba(255,255,255,.20)}
+    .toast{
+      margin-top:10px;
+      display:none;
+      white-space:pre-wrap;
+    }
+    code.k{
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+      font-size: 12px;
+      color: #e5e7eb;
+      background: rgba(0,0,0,.25);
+      border: 1px solid rgba(255,255,255,.10);
+      padding: 2px 6px;
+      border-radius: 8px;
     }
   </style>
 </head>
 
 <body>
-  <div class="wrap">
-    <div class="topbar">
-      <a class="brand" href="https://swamiginstitute.com" aria-label="SwamiG Institute Home">
-        <div class="logo" title="SwamiG Institute">
-          <img src="SwamiG.gif" alt="SwamiG Institute logo" onerror="this.remove(); this.parentElement.insertAdjacentHTML('beforeend','<div class=&quot;fallback&quot;>SGI</div>');" />
-        </div>
-        <div class="tagline">
-          <div class="t1">SwamiG Institute (SGI)</div>
-          <div class="t2">Universal Priesthood • Comparative Sacred Science</div>
-        </div>
+<header>
+  <div class="topbar">
+    <div class="brand">
+      <a class="logo" href="https://swamiginstitute.com" title="SwamiGInstitute.com">
+        <img src="SwamiG.gif" alt="SwamiG Institute Logo"
+             onerror="this.style.display='none'; this.parentElement.textContent='SGI'; this.parentElement.style.fontWeight='900'; this.parentElement.style.color='var(--ink)';">
       </a>
-
-      <div class="pillrow">
-        <span class="pill"><span class="dot p"></span> Single-File Lesson</span>
-        <span class="pill"><span class="dot y"></span> Images Included</span>
-        <span class="pill"><span class="dot g"></span> Checklist Saved Locally</span>
+      <div>
+        <h1>SwamiG Institute</h1>
+        <div class="sub">Public Teaching • Universal Law Parallels</div>
       </div>
     </div>
 
-    <section class="hero">
-      <h1>Belief System Parallels</h1>
-      <p class="sub">Ifá • Ayurveda • I Ching • Nation of Islam (Point #12)</p>
-
-      <div class="keyline">
-        <strong>SGI Core Insight:</strong>
-        All four systems teach that when people fall out of alignment with divine order, <em>corrective wisdom appears</em>—often embodied—so the people can return to law, balance, and right living.
-      </div>
-
-      <div class="tools">
-        <button type="button" onclick="window.print()">Print / Save as PDF</button>
-        <button type="button" onclick="resetProgress()">Reset checklist</button>
-        <button type="button" onclick="toggleSources()">Toggle image credits</button>
-      </div>
-    </section>
-
-    <div class="grid">
-      <!-- IFÁ -->
-      <article class="card half" id="ifa">
-        <div class="cardhead">
-          <div>
-            <div class="kicker"><span class="kbadge"></span> Ifá (Yorùbá Sacred Science)</div>
-            <div class="title">Destiny correction through revealed pattern</div>
-            <p class="meta">Order is readable. Divination reveals alignment and remedy.</p>
-          </div>
-        </div>
-
-        <div class="cardbody">
-          <div class="imgwrap">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Brooklyn_Museum_75.147.1_Divination_Tray_Opon_Ifa.jpg"
-              alt="Ifá divination tray (Opon Ifa)"
-              loading="lazy"
-            />
-            <div class="caption src">
-              Image: Divination Tray (Opon Ifa) — Brooklyn Museum / Wikimedia Commons.
-            </div>
-          </div>
-
-          <ul>
-            <li><strong>Aṣẹ</strong> expresses divine order through lived reality.</li>
-            <li><strong>Ori</strong> is destiny-seat; disorder reflects misalignment with Ori.</li>
-            <li><strong>Odu</strong> encodes patterns of law, consequence, and correction.</li>
-            <li><strong>Ebo</strong> is practical remedy: action restores harmony.</li>
-          </ul>
-
-          <div class="callout">
-            <strong>Parallel function:</strong> Ifá acts as a <em>diagnostic cosmology</em>—life is a readable text, and correction is prescribed.
-          </div>
-        </div>
-      </article>
-
-      <!-- AYURVEDA -->
-      <article class="card half" id="ayurveda">
-        <div class="cardhead">
-          <div>
-            <div class="kicker"><span class="kbadge"></span> Ayurveda (Vedic Sacred Science)</div>
-            <div class="title">Health as alignment with cosmic law</div>
-            <p class="meta">Balance the doshas; restore harmony through disciplined living.</p>
-          </div>
-        </div>
-
-        <div class="cardbody">
-          <div class="imgwrap">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/4/45/Ayurveda_humors.png"
-              alt="Ayurveda humors: vata pitta kapha and five elements"
-              loading="lazy"
-              style="object-fit:contain; background:rgba(255,255,255,.06)"
-            />
-            <div class="caption src">
-              Image: “Ayurveda humors” schematic (vata–pitta–kapha + elements) — Wikimedia Commons.
-            </div>
-          </div>
-
-          <ul>
-            <li><strong>Rta / Dharma</strong> = cosmic order and right function.</li>
-            <li><strong>Vata, Pitta, Kapha</strong> = balancing forces of body & mind.</li>
-            <li>Illness is a <em>signal</em> of imbalance (season, diet, behavior, rhythm).</li>
-            <li>Restoration is <strong>practical</strong>: food, routine, breath, herbs, conduct.</li>
-          </ul>
-
-          <div class="callout">
-            <strong>Parallel function:</strong> Ayurveda acts as a <em>biological cosmology</em>—the body mirrors universal law.
-          </div>
-        </div>
-      </article>
-
-      <!-- I CHING -->
-      <article class="card half" id="iching">
-        <div class="cardhead">
-          <div>
-            <div class="kicker"><span class="kbadge"></span> I Ching (Book of Changes)</div>
-            <div class="title">Right action through timing and change</div>
-            <p class="meta">Each moment has a pattern; wisdom is responsiveness.</p>
-          </div>
-        </div>
-
-        <div class="cardbody">
-          <div class="imgwrap">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/f/f8/Diagram_of_I_Ching_hexagrams_owned_by_Gottfried_Wilhelm_Leibniz%2C_1701.jpg"
-              alt="I Ching hexagrams diagram (Leibniz, 1701)"
-              loading="lazy"
-              style="object-fit:contain; background:rgba(255,255,255,.06)"
-            />
-            <div class="caption src">
-              Image: Diagram of I Ching hexagrams (Leibniz, 1701) — public domain / Wikimedia Commons.
-            </div>
-          </div>
-
-          <ul>
-            <li>Reality unfolds in lawful cycles of <strong>change (Yi)</strong>.</li>
-            <li>Hexagrams map “the situation” and the <em>right next move</em>.</li>
-            <li>Fate is not rigid: alignment improves outcomes.</li>
-            <li>Wisdom emphasizes <strong>timing</strong>, humility, and correct response.</li>
-          </ul>
-
-          <div class="callout">
-            <strong>Parallel function:</strong> I Ching acts as a <em>temporal cosmology</em>—time itself “speaks.”
-          </div>
-        </div>
-      </article>
-
-      <!-- NOI Point #12 -->
-      <article class="card half" id="noi">
-        <div class="cardhead">
-          <div>
-            <div class="kicker"><span class="kbadge"></span> Nation of Islam (Point #12)</div>
-            <div class="title">Divine intervention through appearance in history</div>
-            <p class="meta">A restorative belief: God acts directly when a people are destroyed.</p>
-          </div>
-        </div>
-
-        <div class="cardbody">
-          <div class="imgwrap">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Star_and_Crescent.svg/3840px-Star_and_Crescent.svg.png"
-              alt="Star and Crescent symbol"
-              loading="lazy"
-              style="object-fit:contain; background:rgba(255,255,255,.06)"
-            />
-            <div class="caption src">
-              Image: Star and Crescent symbol (public domain) — Wikimedia Commons.
-            </div>
-          </div>
-
-          <div class="callout" style="border-color: rgba(187,102,255,.35); background: rgba(187,102,255,.10);">
-            <strong>Point #12 (NOI / “The Muslim Program”):</strong><br/>
-            “We believe that Allah (God) appeared in the Person of Master W. Fard Muhammad, July, 1930; the long-awaited ‘Messiah’ of the Christians and the ‘Mahdi’ of the Muslims.”
-          </div>
-
-          <ul>
-            <li>God is not distant: divine guidance is <strong>active in history</strong>.</li>
-            <li>Revelation appears when misalignment reaches a peak (social + spiritual crisis).</li>
-            <li>Truth is restorative: law, discipline, identity, and collective uplift.</li>
-            <li>Faith is expressed through <strong>practice</strong>, not slogans.</li>
-          </ul>
-
-          <div class="callout">
-            <strong>Parallel function:</strong> Point #12 frames a <em>restorative intervention</em>—guidance becomes embodied so a people can return to divine law.
-          </div>
-        </div>
-      </article>
-
-      <!-- COMPARATIVE TABLE -->
-      <section class="card" id="table">
-        <div class="cardhead">
-          <div>
-            <div class="kicker"><span class="kbadge"></span> SGI Comparative Framework</div>
-            <div class="title">Side-by-side parallels (teaching-ready)</div>
-            <p class="meta">Use this table for class discussion, quizzes, or module summaries.</p>
-          </div>
-        </div>
-
-        <div class="cardbody">
-          <div class="tablewrap" role="region" aria-label="Comparative table">
-            <table>
-              <thead>
-                <tr>
-                  <th style="min-width:220px">Universal Question</th>
-                  <th>Ifá</th>
-                  <th>Ayurveda</th>
-                  <th>I Ching</th>
-                  <th>NOI Point #12</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Is disorder random?</td>
-                  <td><span class="no">No</span> — pattern is readable via Odu/Ori</td>
-                  <td><span class="no">No</span> — imbalance signals misalignment</td>
-                  <td><span class="no">No</span> — change follows law</td>
-                  <td><span class="no">No</span> — history is governed and corrected</td>
-                </tr>
-                <tr>
-                  <td>What is “divine order” called?</td>
-                  <td>Aṣẹ / Odu (law-pattern)</td>
-                  <td>Rta / Dharma (right order)</td>
-                  <td>Tao / Yi (lawful change)</td>
-                  <td>Allah’s Law / guidance</td>
-                </tr>
-                <tr>
-                  <td>Does corrective wisdom appear?</td>
-                  <td><span class="ok">Yes</span> — divination reveals correction</td>
-                  <td><span class="ok">Yes</span> — teaching restores balance</td>
-                  <td><span class="ok">Yes</span> — counsel for right action</td>
-                  <td><span class="ok">Yes</span> — intervention to restore a people</td>
-                </tr>
-                <tr>
-                  <td>Is wisdom embodied?</td>
-                  <td><span class="ok">Yes</span> — Orunmila as wisdom-channel</td>
-                  <td><span class="ok">Yes</span> — sages / avatars as restore-agents</td>
-                  <td><span class="ok">Yes</span> — the Sage at turning points</td>
-                  <td><span class="ok">Yes</span> — “Allah appeared in the Person…”</td>
-                </tr>
-                <tr>
-                  <td>How do you realign?</td>
-                  <td>Ebo + conduct + counsel</td>
-                  <td>Diet + routine + behavior + therapy</td>
-                  <td>Right action + timing + humility</td>
-                  <td>Discipline + law + uplift + obedience</td>
-                </tr>
-                <tr>
-                  <td>Is salvation collective?</td>
-                  <td><span class="ok">Yes</span> — family/community destiny repair</td>
-                  <td><span class="maybe">Often</span> — starts personal, impacts society</td>
-                  <td><span class="maybe">Often</span> — leadership restores order</td>
-                  <td><span class="ok">Yes</span> — restoration of a people</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <div class="callout" style="margin-top:14px">
-            <strong>SGI Closing Principle:</strong><br/>
-            “Truth does not compete with truth. It appears in the form required by the condition of the people.”
-          </div>
-        </div>
-      </section>
-
-      <!-- CHECKLIST + NOTES -->
-      <section class="card" id="practice">
-        <div class="cardhead">
-          <div>
-            <div class="kicker"><span class="kbadge"></span> Student Practice</div>
-            <div class="title">Checklist + reflection (saved on this device)</div>
-            <p class="meta">Use this to track progress for your SGI module.</p>
-          </div>
-        </div>
-
-        <div class="cardbody">
-          <div class="checklist" id="checklist">
-            <label class="chk">
-              <input type="checkbox" data-k="c1" />
-              <div><strong>Read</strong> the NOI Point #12 statement and restate it in your own words.</div>
-            </label>
-            <label class="chk">
-              <input type="checkbox" data-k="c2" />
-              <div><strong>Identify</strong> the “divine order” term in each system (Aṣẹ/Rta/Yi/Law).</div>
-            </label>
-            <label class="chk">
-              <input type="checkbox" data-k="c3" />
-              <div><strong>Explain</strong> how “correction” works (Ebo / lifestyle / right action / discipline).</div>
-            </label>
-            <label class="chk">
-              <input type="checkbox" data-k="c4" />
-              <div><strong>Write</strong> one paragraph: “What does alignment look like in daily life?”</div>
-            </label>
-          </div>
-
-          <div style="margin-top:12px">
-            <div class="kicker" style="margin-bottom:8px"><span class="kbadge"></span> Notes</div>
-            <textarea class="notes" id="notes" placeholder="Write your reflections, examples, or teaching notes here..."></textarea>
-          </div>
-        </div>
-      </section>
+    <div class="actions">
+      <a class="pill" href="#point12"><span class="dot"></span><strong>Point #12</strong></a>
+      <a class="pill secondary" href="#diagram"><span class="dot"></span><strong>Diagrams</strong></a>
+      <a class="pill ok" href="#sources"><span class="dot"></span><strong>Sources</strong></a>
     </div>
-
-    <footer>
-      <span class="tiny">SGI • Comparative Study Page • Local progress only (not uploaded)</span>
-      <div style="margin-top:10px; opacity:.7">
-        Educational use: respectful comparative literacy. Each tradition retains its own theology and boundaries.
-      </div>
-    </footer>
   </div>
+</header>
 
-  <script>
-    // LocalStorage keys
-    const LS_KEY = "sgi_parallels_noi12_v1";
-    const state = JSON.parse(localStorage.getItem(LS_KEY) || "{}");
+<main class="wrap">
+  <!-- HERO -->
+  <section class="hero">
+    <div class="card left">
+      <div class="kicker"><span class="ring"></span> Ifá • Ayurveda • Ausar–Auset (Metu Neter Vol. 1) • Nation of Islam (Point #12)</div>
+      <h2>One Law — Four Languages</h2>
+      <p class="lead">
+        This SGI teaching page shows how four different systems converge on the same central instruction:
+        <span class="hl">Divine order begins inside the mind, then expresses through disciplined living.</span>
+      </p>
 
-    // Restore checklist
-    document.querySelectorAll('input[type="checkbox"][data-k]').forEach(cb=>{
-      const k = cb.getAttribute("data-k");
-      cb.checked = !!state[k];
-      cb.addEventListener("change", ()=>{
-        state[k] = cb.checked;
-        localStorage.setItem(LS_KEY, JSON.stringify(state));
-      });
-    });
+      <div class="meta">
+        <div class="chip"><strong>Ifá:</strong> Orí alignment • Ìwà Pẹ̀lẹ́ • Aṣẹ</div>
+        <div class="chip"><strong>Ayurveda:</strong> Agni • Dosha balance</div>
+        <div class="chip"><strong>Metu Neter:</strong> Ausar–Auset cultivation • Ma’at</div>
+        <div class="chip"><strong>NOI:</strong> Point #12 • God-in-person doctrine</div>
+      </div>
 
-    // Notes
-    const notes = document.getElementById("notes");
-    notes.value = state.notes || "";
-    notes.addEventListener("input", ()=>{
-      state.notes = notes.value;
-      localStorage.setItem(LS_KEY, JSON.stringify(state));
-    });
+      <div class="miniTag"><i></i> SGI Core Statement: <span class="hl">Inner resurrection precedes outer freedom.</span></div>
 
-    // Reset
-    function resetProgress(){
-      if(!confirm("Reset checklist and notes on this device?")) return;
-      localStorage.removeItem(LS_KEY);
-      location.reload();
+      <div class="note" style="margin-top:12px">
+        <strong>How to use this page:</strong> Read Point #12, then review the “parallel meanings” table and diagrams.
+        This is for <span class="hl">comparative spiritual education</span> and is not medical advice.
+      </div>
+    </div>
+
+    <aside class="card right">
+      <div class="note" id="point12">
+        <strong>Point #12 (official wording):</strong><br><br>
+        “WE BELIEVE that Allah (God) appeared in the Person of Master W. Fard Muhammad, July, 1930; the long-awaited
+        ‘Messiah’ of the Christians and the ‘Mahdi’ of the Muslims.<br><br>
+        We believe further and lastly that Allah is God and besides HIM there is no god and He will bring about a universal government of peace wherein we all can live in peace together.”
+        <div class="miniTag" style="margin-top:10px"><i style="background:var(--ok)"></i> Key idea: <span class="hl">Divine guidance enters history to restore order.</span></div>
+      </div>
+    </aside>
+  </section>
+
+  <!-- IMAGES / VISUAL ANCHORS -->
+  <section class="grid">
+    <div class="card section col-12">
+      <h3>Pictures: Visual Anchors for the Four Systems</h3>
+      <p>These images help students “see” the four languages: Ifá (Orí/Oracle), Ayurveda (Doshas), Ausar–Auset (resurrection symbolism), and NOI (Point #12 source document).</p>
+
+      <div class="twoPics">
+        <figure class="figure">
+          <img alt="Ifá divination tray (Opon Ifa) — Yoruba sacred technology"
+               src="https://commons.wikimedia.org/wiki/Special:FilePath/Op%C3%B3n%20IF%C3%A1.jpg?width=1200">
+          <figcaption class="figcap">Ifá: Opón Ifá (divination tray). Visual symbol of Orí-guidance through oracle discipline.</figcaption>
+        </figure>
+
+        <figure class="figure">
+          <img alt="Ayurveda doshas diagram (Vata, Pitta, Kapha)"
+               src="https://commons.wikimedia.org/wiki/Special:FilePath/Ayurveda%20humors.png?width=1200">
+          <figcaption class="figcap">Ayurveda: Tri-dosha model—Vata, Pitta, Kapha—balance as “order in the body.”</figcaption>
+        </figure>
+      </div>
+
+      <div class="twoPics" style="margin-top:12px">
+        <figure class="figure">
+          <img alt="Isis protecting Osiris statue (symbol of restoration/resurrection)"
+               src="https://commons.wikimedia.org/wiki/Special:FilePath/Egyptian%20-%20Statue%20of%20Isis%20Protecting%20Osiris%20-%20Walters%2022199.jpg?width=1200">
+          <figcaption class="figcap">Metu Neter / Ausar–Auset: Isis (Auset) protecting/restoring Osiris (Ausar)—a symbol of inner resurrection.</figcaption>
+        </figure>
+
+        <figure class="figure">
+          <img alt="Nation of Islam Muslim Program page (What The Muslims Believe)"
+               src="https://image.thum.io/get/width/1200/https://noi.org/muslim-program/">
+          <figcaption class="figcap">NOI: “The Muslim Program” page showing “What The Muslims Believe,” including Point #12.</figcaption>
+        </figure>
+      </div>
+
+      <div class="note small" style="margin-top:12px">
+        If the NOI screenshot does not load in your browser, use the source link in the “Sources” section below.
+      </div>
+    </div>
+  </section>
+
+  <!-- PARALLELS TABLE -->
+  <section class="grid">
+    <div class="card section col-12">
+      <h3>Meaning Parallels: Point #12 mapped across the 3 other systems</h3>
+      <p>
+        Point #12 is a doctrine of <span class="hl">divine appearance in history</span> for the restoration of peace/order.
+        In the other systems, that same “arrival of guidance” appears as <span class="hl">oracle, science of balance, and resurrection training</span>.
+      </p>
+
+      <table class="table" aria-label="Parallels table">
+        <thead>
+          <tr>
+            <th style="width:20%">Universal Meaning</th>
+            <th>Ifá</th>
+            <th>Ayurveda</th>
+            <th>Metu Neter (Ausar–Auset)</th>
+            <th>NOI — Point #12</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="hl">Divine Guidance enters time</span></td>
+            <td>Orunmila = witness of destiny; guidance through oracle and Orí alignment.</td>
+            <td>Rishis preserve life-science; guidance through dharma + health law.</td>
+            <td>Auset recovers the “hidden name” (higher knowledge) to restore Ausar (order).</td>
+            <td>Allah appears in person as Master W. Fard Muhammad for end-time restoration.</td>
+          </tr>
+          <tr>
+            <td><span class="hl">Restoration before peace</span></td>
+            <td>Right character (Ìwà Pẹ̀lẹ́) restores relationship with Orí and community.</td>
+            <td>Balance of doshas restores stability; disorder produces disease.</td>
+            <td>Ma’at restores harmony; resurrection is the repair of inner disorder.</td>
+            <td>Universal government of peace follows divine intervention + correction.</td>
+          </tr>
+          <tr>
+            <td><span class="hl">Discipline is required</span></td>
+            <td>Taboos/ritual discipline protect Aṣẹ and destiny execution.</td>
+            <td>Daily regimen (dinacharya) protects Agni and mind clarity.</td>
+            <td>Spiritual cultivation disciplines the lower nature to awaken higher mind.</td>
+            <td>Belief is not passive—Point #12 is treated as foundation requiring proof/defense.</td>
+          </tr>
+          <tr>
+            <td><span class="hl">Inner change precedes outer change</span></td>
+            <td>Orí correction precedes success in the world.</td>
+            <td>Digestive/mind balance precedes strong health outcomes.</td>
+            <td>Inner resurrection precedes liberation from Set (lower chaos).</td>
+            <td>Divine appearance sets the stage for transformed society and peace.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- DIAGRAMS -->
+  <section class="grid" id="diagram">
+    <div class="card section col-6">
+      <h3>Diagram 1 — “One Law, Four Languages” Map</h3>
+      <p>A single center principle with four system-specific expressions.</p>
+
+      <div class="svgWrap" aria-label="Universal law diagram">
+        <svg viewBox="0 0 900 520" role="img" aria-label="One Law Four Languages diagram">
+          <defs>
+            <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+              <feGaussianBlur stdDeviation="6" result="blur"/>
+              <feMerge>
+                <feMergeNode in="blur"/>
+                <feMergeNode in="SourceGraphic"/>
+              </feMerge>
+            </filter>
+          </defs>
+
+          <!-- background rings -->
+          <circle cx="450" cy="260" r="210" fill="rgba(255,255,255,.02)" stroke="rgba(255,255,255,.10)" stroke-width="2"/>
+          <circle cx="450" cy="260" r="120" fill="rgba(255,255,255,.02)" stroke="rgba(255,255,255,.10)" stroke-width="2"/>
+
+          <!-- center -->
+          <circle cx="450" cy="260" r="86" fill="rgba(187,102,255,.18)" stroke="rgba(255,255,255,.14)" stroke-width="2" filter="url(#glow)"/>
+          <text x="450" y="246" text-anchor="middle" font-size="20" fill="white" font-weight="800">DIVINE ORDER</text>
+          <text x="450" y="272" text-anchor="middle" font-size="14" fill="rgba(243,244,246,.85)">Inner discipline → outer peace</text>
+          <text x="450" y="294" text-anchor="middle" font-size="12" fill="rgba(191,195,209,.95)">“Resurrection” as restoration</text>
+
+          <!-- connectors -->
+          <line x1="450" y1="174" x2="450" y2="112" stroke="rgba(255,255,255,.18)" stroke-width="2"/>
+          <line x1="530" y1="260" x2="740" y2="260" stroke="rgba(255,255,255,.18)" stroke-width="2"/>
+          <line x1="450" y1="346" x2="450" y2="408" stroke="rgba(255,255,255,.18)" stroke-width="2"/>
+          <line x1="370" y1="260" x2="160" y2="260" stroke="rgba(255,255,255,.18)" stroke-width="2"/>
+
+          <!-- nodes -->
+          <g>
+            <rect x="310" y="40" rx="18" ry="18" width="280" height="88" fill="rgba(255,255,255,.03)" stroke="rgba(255,255,255,.12)"/>
+            <text x="450" y="78" text-anchor="middle" font-size="18" fill="white" font-weight="800">NOI — Point #12</text>
+            <text x="450" y="102" text-anchor="middle" font-size="12" fill="rgba(191,195,209,.95)">Divine appearance → peace restoration</text>
+          </g>
+
+          <g>
+            <rect x="615" y="216" rx="18" ry="18" width="260" height="88" fill="rgba(255,255,255,.03)" stroke="rgba(255,255,255,.12)"/>
+            <text x="745" y="252" text-anchor="middle" font-size="18" fill="white" font-weight="800">Ayurveda</text>
+            <text x="745" y="276" text-anchor="middle" font-size="12" fill="rgba(191,195,209,.95)">Agni + Dosha balance = order</text>
+          </g>
+
+          <g>
+            <rect x="280" y="392" rx="18" ry="18" width="340" height="88" fill="rgba(255,255,255,.03)" stroke="rgba(255,255,255,.12)"/>
+            <text x="450" y="428" text-anchor="middle" font-size="18" fill="white" font-weight="800">Metu Neter (Ausar–Auset)</text>
+            <text x="450" y="452" text-anchor="middle" font-size="12" fill="rgba(191,195,209,.95)">Resurrection training • Ma’at restores harmony</text>
+          </g>
+
+          <g>
+            <rect x="25" y="216" rx="18" ry="18" width="260" height="88" fill="rgba(255,255,255,.03)" stroke="rgba(255,255,255,.12)"/>
+            <text x="155" y="252" text-anchor="middle" font-size="18" fill="white" font-weight="800">Ifá</text>
+            <text x="155" y="276" text-anchor="middle" font-size="12" fill="rgba(191,195,209,.95)">Orí alignment • Ìwà Pẹ̀lẹ́ • Aṣẹ</text>
+          </g>
+        </svg>
+      </div>
+    </div>
+
+    <div class="card section col-6">
+      <h3>Diagram 2 — “Resurrection as a Process” Flow</h3>
+      <p>This flow matches Ifá correction, Ayurvedic balance, Ausarian cultivation, and NOI restoration into a single sequence.</p>
+
+      <div class="svgWrap" aria-label="Resurrection process diagram">
+        <svg viewBox="0 0 900 420" role="img" aria-label="Resurrection process flow diagram">
+          <!-- boxes -->
+          <defs>
+            <linearGradient id="g1" x1="0" x2="1">
+              <stop offset="0" stop-color="rgba(187,102,255,.28)"/>
+              <stop offset="1" stop-color="rgba(255,209,102,.22)"/>
+            </linearGradient>
+          </defs>
+
+          <rect x="40" y="60" width="230" height="86" rx="18" fill="rgba(255,255,255,.03)" stroke="rgba(255,255,255,.12)"/>
+          <text x="155" y="94" text-anchor="middle" font-size="16" fill="white" font-weight="850">1) AWAKE</text>
+          <text x="155" y="120" text-anchor="middle" font-size="12" fill="rgba(191,195,209,.95)">Recognize disorder</text>
+
+          <rect x="330" y="60" width="230" height="86" rx="18" fill="rgba(255,255,255,.03)" stroke="rgba(255,255,255,.12)"/>
+          <text x="445" y="94" text-anchor="middle" font-size="16" fill="white" font-weight="850">2) ALIGN</text>
+          <text x="445" y="120" text-anchor="middle" font-size="12" fill="rgba(191,195,209,.95)">Law + discipline</text>
+
+          <rect x="620" y="60" width="240" height="86" rx="18" fill="rgba(255,255,255,.03)" stroke="rgba(255,255,255,.12)"/>
+          <text x="740" y="94" text-anchor="middle" font-size="16" fill="white" font-weight="850">3) RESTORE</text>
+          <text x="740" y="120" text-anchor="middle" font-size="12" fill="rgba(191,195,209,.95)">Balance / Ma’at</text>
+
+          <rect x="185" y="220" width="530" height="110" rx="20" fill="url(#g1)" stroke="rgba(255,255,255,.14)"/>
+          <text x="450" y="262" text-anchor="middle" font-size="18" fill="white" font-weight="900">4) PEACE OUTSIDE</text>
+          <text x="450" y="288" text-anchor="middle" font-size="12" fill="rgba(11,11,15,.92)">Health • clarity • stable community • just action</text>
+
+          <!-- arrows -->
+          <path d="M270 103 L330 103" stroke="rgba(255,255,255,.22)" stroke-width="3" fill="none"/>
+          <polygon points="330,103 318,96 318,110" fill="rgba(255,255,255,.22)"/>
+          <path d="M560 103 L620 103" stroke="rgba(255,255,255,.22)" stroke-width="3" fill="none"/>
+          <polygon points="620,103 608,96 608,110" fill="rgba(255,255,255,.22)"/>
+
+          <path d="M155 146 C155 190 230 210 280 230" stroke="rgba(255,255,255,.20)" stroke-width="3" fill="none"/>
+          <path d="M445 146 C445 190 450 205 450 220" stroke="rgba(255,255,255,.20)" stroke-width="3" fill="none"/>
+          <path d="M740 146 C740 190 670 210 620 230" stroke="rgba(255,255,255,.20)" stroke-width="3" fill="none"/>
+
+          <!-- labels -->
+          <text x="155" y="175" text-anchor="middle" font-size="11" fill="rgba(191,195,209,.95)">Ifá: realize Orí conflict</text>
+          <text x="445" y="175" text-anchor="middle" font-size="11" fill="rgba(191,195,209,.95)">Ayurveda: protect Agni</text>
+          <text x="740" y="175" text-anchor="middle" font-size="11" fill="rgba(191,195,209,.95)">Metu Neter: correct Set</text>
+
+          <text x="450" y="318" text-anchor="middle" font-size="12" fill="rgba(11,11,15,.92)" font-weight="850">
+            NOI framing: Divine guidance enters history to establish universal peace.
+          </text>
+        </svg>
+      </div>
+
+      <details style="margin-top:12px">
+        <summary>
+          <strong>SGI “translation key” (click to expand)</strong>
+          <span class="caret">open ▾</span>
+        </summary>
+        <div class="panel">
+          <ul>
+            <li><span class="hl">Ifá language:</span> Orí alignment + character discipline restores destiny flow.</li>
+            <li><span class="hl">Ayurveda language:</span> protect Agni; balance doshas; restore order in the body-mind.</li>
+            <li><span class="hl">Metu Neter language:</span> Auset (higher mind) disciplines Set (lower nature) to resurrect Ausar (divine order).</li>
+            <li><span class="hl">NOI language:</span> Allah appears in person as guidance for end-time restoration and peace.</li>
+          </ul>
+        </div>
+      </details>
+    </div>
+  </section>
+
+  <!-- SOURCES -->
+  <section class="grid" id="sources">
+    <div class="card section col-8">
+      <h3>Sources & Attributions</h3>
+      <p>Primary sources used for the wording of Point #12 and the diagrams/images embedded on this page.</p>
+
+      <div class="note">
+        <strong>Point #12 (primary):</strong><br>
+        Nation of Islam — “The Muslim Program” (What The Muslims Believe), lines including Point #12.
+        <div class="btnRow">
+          <a class="pill" href="https://noi.org/muslim-program/" target="_blank" rel="noopener">
+            <span class="dot"></span><strong>Open NOI Source</strong>
+          </a>
+        </div>
+      </div>
+
+      <div class="note" style="margin-top:12px">
+        <strong>Images (public sources):</strong>
+        <ul>
+          <li>Wikimedia Commons — Opón Ifá (divination tray) image</li>
+          <li>Wikimedia Commons — Ayurveda humors (dosha diagram)</li>
+          <li>Wikimedia Commons — “Isis Protecting Osiris” (Walters Art Museum)</li>
+        </ul>
+        <div class="small">Tip: If you prefer “all files in the same repo,” tell me and I’ll convert these into local image filenames and update the HTML paths.</div>
+      </div>
+    </div>
+
+    <div class="card section col-4">
+      <h3>Export (Optional)</h3>
+      <p>Copy a clean teaching summary for posting or a module intro.</p>
+      <div class="btnRow">
+        <button id="btnCopy">Copy Summary Text</button>
+      </div>
+      <div class="note toast" id="toast"></div>
+    </div>
+  </section>
+
+  <div class="footer">
+    <div>© <span id="year"></span> SwamiG Institute • Comparative Systems Teaching</div>
+    <div class="small">Educational use • Not medical advice • “Inner order precedes outer peace.”</div>
+  </div>
+</main>
+
+<script>
+(() => {
+  document.getElementById("year").textContent = new Date().getFullYear();
+
+  const summary =
+`SGI — Ifá • Ayurveda • Metu Neter • NOI Point #12 (Universal Parallels)
+
+Point #12 (NOI) teaches that divine guidance appears in history to restore peace/order.
+In Ifá, this “guidance” is expressed as Orí alignment through oracle discipline and character (Ìwà Pẹ̀lẹ́).
+In Ayurveda, it is expressed as protecting Agni and balancing the doshas (order in the body-mind).
+In Metu Neter (Ausar–Auset), it is expressed as resurrection training: higher mind disciplines the lower nature to restore Ma’at.
+
+One law — four languages:
+INNER ORDER → RIGHT DISCIPLINE → RESTORATION → OUTER PEACE.`;
+
+  const toast = document.getElementById("toast");
+  const btn = document.getElementById("btnCopy");
+
+  async function copyText(t){
+    try{
+      await navigator.clipboard.writeText(t);
+      toast.style.display = "block";
+      toast.textContent = "Copied ✓\n\n" + t;
+    }catch(e){
+      toast.style.display = "block";
+      toast.textContent = "Copy failed (your browser blocked clipboard). Here is the text:\n\n" + t;
     }
+  }
 
-    // Toggle source captions
-    function toggleSources(){
-      document.querySelectorAll(".caption.src").forEach(el=>{
-        el.style.display = (el.style.display === "none") ? "block" : "none";
-      });
-    }
-    // Default: show captions (you can auto-hide by calling toggleSources() here)
-  </script>
+  btn.addEventListener("click", () => copyText(summary));
+})();
+</script>
 </body>
 </html>
